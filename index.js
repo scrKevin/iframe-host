@@ -19,6 +19,10 @@ app.get('/twitch', function(req, res) {
   res.render('pages/twitch/index');
 });
 
+app.get('/stopwatch', function(req, res) {
+  res.render('pages/stopwatch/index');
+});
+
 var httpServer = http.createServer(app);
 httpServer.listen(3131);
 var httpsServer = https.createServer(credentials, app);
